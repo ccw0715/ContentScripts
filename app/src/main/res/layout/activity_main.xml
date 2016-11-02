@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ccw.contentscripts.view.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/home_bg"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/brown"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/discovery"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/discovery_bg"
+            android:gravity="center"
+            android:text="发现"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/fresh"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/fresh_bg"
+            android:gravity="center"
+            android:text="新鲜"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/msg"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/msg_bg"
+            android:gravity="center"
+            android:text="消息"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg"
+        android:orientation="vertical"></LinearLayout>
+</RelativeLayout>

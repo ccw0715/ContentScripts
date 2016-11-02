@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/toolbar">
+
+        <ImageView
+            android:id="@+id/mine"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:src="@drawable/my_defalut_avatar" />
+
+        <ImageView
+            android:id="@+id/write"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:src="@drawable/ss_ic_write_comment" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:id="@+id/rg"
+            android:layout_toLeftOf="@+id/write"
+            android:layout_toRightOf="@+id/mine"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/selection"
+                android:layout_width="72dp"
+                android:layout_height="32dp"
+                android:button="@null"
+                android:checked="true"
+                android:background="@drawable/rb_bg"
+                android:gravity="center"
+                android:text="精选"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/concern"
+                android:layout_width="72dp"
+                android:layout_height="32dp"
+                android:button="@null"
+                android:layout_toRightOf="@+id/selection"
+                android:background="@drawable/rb_bg"
+                android:gravity="center"
+                android:text="关注"
+                android:textSize="18dp" />
+        </RadioGroup>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/ll"
+        android:layout_height="match_parent"></LinearLayout>
+</LinearLayout>
