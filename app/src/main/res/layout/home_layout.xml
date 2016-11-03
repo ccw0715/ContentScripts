@@ -40,7 +40,7 @@
                 android:layout_height="32dp"
                 android:button="@null"
                 android:checked="true"
-                android:background="@drawable/rb_bg"
+                android:background="@drawable/rg_bg"
                 android:gravity="center"
                 android:text="精选"
                 android:textSize="18dp" />
@@ -51,12 +51,13 @@
                 android:layout_height="32dp"
                 android:button="@null"
                 android:layout_toRightOf="@+id/selection"
-                android:background="@drawable/rb_bg"
+                android:background="@drawable/rg_bg"
                 android:gravity="center"
                 android:text="关注"
                 android:textSize="18dp" />
         </RadioGroup>
     </RelativeLayout>
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"

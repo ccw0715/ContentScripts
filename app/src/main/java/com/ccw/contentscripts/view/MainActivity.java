@@ -1,5 +1,6 @@
 package com.ccw.contentscripts.view;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.widget.LinearLayout;
@@ -13,7 +14,7 @@ import com.ccw.contentscripts.view.fragment.FreshFragment;
 import com.ccw.contentscripts.view.fragment.HomeFragment;
 import com.ccw.contentscripts.view.fragment.MsgFragment;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity{
 
     private RadioGroup rg;
     private RadioButton home;
@@ -25,6 +26,10 @@ public class MainActivity extends BaseActivity {
     private Fragment fragment;
     private Fragment currentFragment;
 
+    private HomeFragment homeFragment = new HomeFragment();
+    private DiscoveryFragment discoveryFragment = new DiscoveryFragment();
+    private FreshFragment freshFragment = new FreshFragment();
+    private MsgFragment msgFragment = new MsgFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +38,7 @@ public class MainActivity extends BaseActivity {
         initView();
         //RadioGroup点击事件
         initClick();
+
     }
 
     private void initClick() {
@@ -46,19 +52,19 @@ public class MainActivity extends BaseActivity {
                 switch (checkedId) {
                     case R.id.home:
                         home.setTextColor(getResources().getColor(R.color.brown));
-                        fragment = new HomeFragment();
+                        fragment = homeFragment;
                         break;
                     case R.id.discovery:
                         discovery.setTextColor(getResources().getColor(R.color.brown));
-                        fragment = new DiscoveryFragment();
+                        fragment = discoveryFragment;
                         break;
                     case R.id.fresh:
                         fresh.setTextColor(getResources().getColor(R.color.brown));
-                        fragment = new FreshFragment();
+                        fragment = freshFragment;
                         break;
                     case R.id.msg:
                         msg.setTextColor(getResources().getColor(R.color.brown));
-                        fragment = new MsgFragment();
+                        fragment = msgFragment;
                         break;
                 }
                 if (fragment.isAdded()) {
@@ -81,5 +87,21 @@ public class MainActivity extends BaseActivity {
         fresh = ((RadioButton) findViewById(R.id.fresh));
         msg = ((RadioButton) findViewById(R.id.msg));
         ll = ((LinearLayout) findViewById(R.id.ll));
+
+        Drawable drawable1 = getResources().getDrawable(R.drawable.home_bg);
+        drawable1.setBounds(0,20,90,100);
+        home.setCompoundDrawables(null,drawable1,null,null);
+
+        Drawable drawable2 = getResources().getDrawable(R.drawable.discovery_bg);
+        drawable2.setBounds(0,20,90,100);
+        discovery.setCompoundDrawables(null,drawable2,null,null);
+
+        Drawable drawable3 = getResources().getDrawable(R.drawable.fresh_bg);
+        drawable3.setBounds(0,20,90,100);
+        fresh.setCompoundDrawables(null,drawable3,null,null);
+
+        Drawable drawable4 = getResources().getDrawable(R.drawable.msg_bg);
+        drawable4.setBounds(0,20,90,100);
+        msg.setCompoundDrawables(null,drawable4,null,null);
     }
 }

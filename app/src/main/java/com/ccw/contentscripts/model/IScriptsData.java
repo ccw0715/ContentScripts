@@ -5,5 +5,5 @@ package com.ccw.contentscripts.model;
  */
 
 public interface IScriptsData {
-    void getData(OnDataLoadListener onDataLoadListener);
+    void getData(String path,OnDataLoadListener onDataLoadListener);
 }

@@ -48,6 +48,7 @@ public class SelectionFragment extends BaseFragment {
         SelectionFgAdapter adapter = new SelectionFgAdapter(getChildFragmentManager(),title,list);
         vp.setAdapter(adapter);
         tabLayout.setupWithViewPager(vp);
+        vp.setCurrentItem(4);
 
     }
 

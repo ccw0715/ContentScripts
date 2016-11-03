@@ -7,6 +7,7 @@ import com.ccw.contentscripts.model.IScriptsData;
 import com.ccw.contentscripts.model.IScriptsDataImp;
 import com.ccw.contentscripts.model.OnDataLoadListener;
 import com.ccw.contentscripts.model.bean.ScriptsBean;
+import com.ccw.contentscripts.util.NetUtil;
 import com.ccw.contentscripts.view.IShowScriptsView;
 
 import java.util.List;
@@ -32,7 +33,7 @@ public class ScriptsPresenter implements IBasePresenter {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                iScriptsData.getData(new OnDataLoadListener() {
+                iScriptsData.getData(NetUtil.scriptsPath,new OnDataLoadListener() {
                     @Override
                     public void onLoadSuccess(final List<ScriptsBean> list) {
                         mHandler.post(new Runnable() {

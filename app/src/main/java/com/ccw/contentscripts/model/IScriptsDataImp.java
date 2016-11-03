@@ -17,9 +17,9 @@ import okhttp3.Response;
 public class IScriptsDataImp implements IScriptsData{
 
     @Override
-    public void getData(final OnDataLoadListener onDataLoadListener) {
+    public void getData(String path,final OnDataLoadListener onDataLoadListener) {
         Request request = new Request.Builder()
-                .url(NetUtil.scriptsPath)
+                .url(path)
                 .build();
         NetUtil.getClient().newCall(request).enqueue(new Callback() {
             @Override

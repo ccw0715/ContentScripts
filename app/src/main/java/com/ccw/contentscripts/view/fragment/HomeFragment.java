@@ -27,6 +27,8 @@ public class HomeFragment extends BaseFragment {
     private Fragment fragment;
     private Fragment currentFragment;
 
+    private SelectionFragment selectionFragment = new SelectionFragment();
+    private ConcernFragment concernFragment = new ConcernFragment();
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -42,10 +44,10 @@ public class HomeFragment extends BaseFragment {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId){
                     case R.id.selection:
-                        fragment = new SelectionFragment();
+                        fragment = selectionFragment;
                         break;
                     case R.id.concern:
-                        fragment = new ConcernFragment();
+                        fragment = concernFragment;
                         break;
                 }
                 if(fragment.isAdded()){

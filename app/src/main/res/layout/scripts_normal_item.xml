@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/dislike"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_dislike" />
+
+        <ImageView
+            android:id="@+id/label"
+            android:layout_width="12dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true" />
+
+        <org.lenve.customshapeimageview.CustomShapeImageView
+            android:id="@+id/userFace"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            app:shape="circle"
+            android:layout_toRightOf="@id/label" />
+
+        <TextView
+            android:id="@+id/username"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/userFace" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_marginRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:id="@+id/btn"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_bg"
+        android:text="哈哈哈哈" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp">
+
+        <ImageView
+            android:id="@+id/digg"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_digg_normal" />
+
+        <TextView
+            android:id="@+id/digg_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/digg"
+            android:gravity="center"
+            android:text="111" />
+
+        <ImageView
+            android:id="@+id/bury"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/digg_count"
+            android:src="@drawable/ic_pop_bury_normal" />
+
+        <TextView
+            android:id="@+id/bury_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/bury"
+            android:gravity="center"
+            android:text="111" />
+
+        <ImageView
+            android:id="@+id/hot"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/bury_count"
+            android:src="@drawable/hot_commenticon_textpage" />
+
+        <TextView
+            android:id="@+id/hot_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hot"
+            android:gravity="center"
+            android:text="111" />
+
+
+        <TextView
+            android:id="@+id/share_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="111" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/share_count"
+            android:src="@drawable/ic_more_action_normal" />
+
+    </RelativeLayout>
+</LinearLayout>
