@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/r"
+        android:layout_height="48dp">
+
+        <org.lenve.customshapeimageview.CustomShapeImageView
+            android:id="@+id/userFace"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            app:shape="circle"
+            android:layout_toRightOf="@id/label" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/userFace" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:id="@+id/share"
+            android:src="@drawable/ic_more_action_normal"
+            android:layout_alignParentRight="true"
+            android:layout_height="48dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/share"
+            android:layout_marginRight="8dp"
+            android:id="@+id/digg_count"
+            android:text="111"
+            android:gravity="center"
+            android:layout_height="48dp" />
+        <ImageView
+            android:layout_width="48dp"
+            android:src="@drawable/ic_digg_normal"
+            android:layout_toLeftOf="@+id/digg_count"
+            android:layout_height="48dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/r"
+        android:layout_marginLeft="48dp"
+        android:id="@+id/comment"
+        android:gravity="top"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

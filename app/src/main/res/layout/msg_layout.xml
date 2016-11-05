@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/brown"
+        android:layout_height="48dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:src="@drawable/my_defalut_avatar"
+            android:padding="8dp"
+            android:id="@+id/avatar"
+            android:onClick="back"
+            android:layout_alignParentLeft="true"
+            android:layout_height="48dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="黑名单"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="48dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="48dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:src="@drawable/ic_tab_message_header_ugc"
+            android:padding="8dp"
+            android:id="@+id/ugc"
+            android:layout_alignParentLeft="true"
+            android:layout_height="48dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_topbar_arrow"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="48dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/ugc"
+            android:text="投稿互动"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="48dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:src="@drawable/ic_tab_message_header_system"
+            android:padding="8dp"
+            android:id="@+id/system"
+            android:layout_alignParentLeft="true"
+            android:layout_height="48dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_topbar_arrow"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="48dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/system"
+            android:text="系统消息"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="48dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:src="@drawable/ic_tab_message_header_fans"
+            android:padding="8dp"
+            android:id="@+id/fans"
+            android:layout_alignParentLeft="true"
+            android:layout_height="48dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_topbar_arrow"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="48dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/fans"
+            android:text="粉丝关注"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

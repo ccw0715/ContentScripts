@@ -1,12 +1,10 @@
 package com.ccw.contentscripts.model.bean;
 
-import java.io.Serializable;
-
 /**
- * Created by 蔡灿武 on 2016/11/2 0002.
+ * Created by 蔡灿武 on 2016/11/5 0005.
  */
 
-public class ScriptsBean implements Serializable{
+public class VideoBean {
     private String label;
     private String avatar_url;
     private String name;
@@ -17,11 +15,14 @@ public class ScriptsBean implements Serializable{
     private int comment_count;
     private int share_count;
     private long id;
+    private String videoUrl;
+    private String imageUrl;
+    private int height;
 
-    public ScriptsBean() {
+    public VideoBean() {
     }
 
-    public ScriptsBean(String label,String avatar_url, String name, String content, String category_name, int digg_count, int bury_count, int comment_count, int share_count,long id) {
+    public VideoBean(String label, String avatar_url, String name, String content, String category_name, int digg_count, int bury_count, int comment_count, int share_count, long id, String videoUrl, String imageUrl,int height) {
         this.label = label;
         this.avatar_url = avatar_url;
         this.name = name;
@@ -31,15 +32,18 @@ public class ScriptsBean implements Serializable{
         this.bury_count = bury_count;
         this.comment_count = comment_count;
         this.share_count = share_count;
-        this.id =id;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
         this.id = id;
+        this.videoUrl = videoUrl;
+        this.imageUrl = imageUrl;
+        this.height = height;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     public String getLabel() {
@@ -114,18 +118,27 @@ public class ScriptsBean implements Serializable{
         this.share_count = share_count;
     }
 
-    @Override
-    public String toString() {
-        return "ScriptsBean{" +
-                "label='" + label + '\'' +
-                ", avatar_url='" + avatar_url + '\'' +
-                ", name='" + name + '\'' +
-                ", content='" + content + '\'' +
-                ", category_name='" + category_name + '\'' +
-                ", digg_count=" + digg_count +
-                ", bury_count=" + bury_count +
-                ", comment_count=" + comment_count +
-                ", share_count=" + share_count +
-                '}';
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getVideoUrl() {
+        return videoUrl;
+    }
+
+    public void setVideoUrl(String videoUrl) {
+        this.videoUrl = videoUrl;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }
