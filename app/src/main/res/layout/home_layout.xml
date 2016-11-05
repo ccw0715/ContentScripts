@@ -23,7 +23,7 @@
             android:layout_height="48dp"
             android:layout_alignParentRight="true"
             android:padding="8dp"
-            android:src="@drawable/ss_ic_write_comment" />
+            android:src="@drawable/ic_publish" />
 
         <RadioGroup
             android:layout_width="match_parent"

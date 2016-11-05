@@ -127,7 +127,6 @@ public class ParseJson {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
         return list;
     }
 }

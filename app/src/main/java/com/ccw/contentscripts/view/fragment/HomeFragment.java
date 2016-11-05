@@ -1,5 +1,6 @@
 package com.ccw.contentscripts.view.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.widget.RadioGroup;
 
 import com.ccw.contentscripts.BaseFragment;
 import com.ccw.contentscripts.R;
+import com.ccw.contentscripts.view.Login;
 
 /**
  * Created by 蔡灿武 on 2016/11/2 0002.
@@ -35,6 +37,14 @@ public class HomeFragment extends BaseFragment {
         View view = inflater.inflate(R.layout.home_layout, container, false);
         initView(view);
         initFragment();
+
+        mine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), Login.class));
+                getActivity().overridePendingTransition(R.anim.enter,R.anim.exit);
+            }
+        });
         return view;
     }
 

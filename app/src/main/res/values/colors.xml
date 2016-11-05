@@ -12,4 +12,5 @@
     <color name="brown">#c49551</color>
     <color name="brownDark">#7b4b05</color>
     <color name="toolbar">#f4dcba</color>
+    <color name="login">#8d3d3e</color>
 </resources>

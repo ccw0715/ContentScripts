@@ -18,7 +18,7 @@
             android:layout_height="48dp" />
         <ImageView
             android:layout_width="wrap_content"
-            android:src="@drawable/ss_ic_write_comment"
+            android:src="@drawable/ic_publish"
             android:gravity="center"
             android:layout_marginRight="8dp"
             android:layout_alignParentRight="true"

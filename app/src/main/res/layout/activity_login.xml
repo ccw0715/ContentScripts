@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ccw.contentscripts.view.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/ic_profile_header"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:layout_width="48dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:src="@drawable/back_white_arrow"
+                android:layout_height="48dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我"
+                android:id="@+id/tv"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:id="@+id/setting"
+                android:src="@drawable/ic_setting_pressed"
+                android:layout_alignParentRight="true"
+                android:layout_height="48dp" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:src="@drawable/ic_nightmode_deep"
+                android:layout_toLeftOf="@+id/setting"
+                android:layout_height="48dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/my_defalut_avatar"
+            android:layout_height="60dp" />
+
+        <Button
+            android:layout_width="128dp"
+            android:text="立即登录"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:background="@drawable/login_btn_bg"
+            android:layout_gravity="center"
+            android:layout_height="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_profile_publish"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:text="投稿"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/ic_profile_feedback"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:text="反馈"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
