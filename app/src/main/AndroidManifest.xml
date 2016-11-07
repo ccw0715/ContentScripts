@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.DetailsActivity" />
-        <activity android:name=".view.Login"></activity>
+        <activity android:name=".view.Login" />
+        <activity android:name=".view.DengLu" />
     </application>
 
 </manifest>
